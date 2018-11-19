@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Reproductor de Pablo </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="src/css/main.css">
+    </head>
+
+    <body>
+        <header>
+            <p> Reproductor Web de Pablo</p>
+        </header>
+
+        <form onsubmit="soundcloud()" action="javascript:void(0)" class="search">
+            <input id="bloque" type="text" placeholder="Busca cancion...">
+            <button id="boton" type="submit"> Buscar </button>
+            <div id="reproductor" ondragover="miOnDragOver(event)" ondrop="miOnDrop(event)"></div>
+        </form>
+        
+        <script src="src/js/main.js"></script>
+    </body>
+</html>
